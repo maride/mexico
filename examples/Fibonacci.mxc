@@ -1,0 +1,45 @@
+// Fibonacci program written in mexico - calculating all results below 1337
+
+// Set up tape
+push 1
+pop
+right
+push 1
+pop
+left
+
+// Fibonnacci loop
+MAINLOOP:
+  // Calculate i + j
+  pusht
+  right
+  pusht
+  add
+
+  // Print out result
+  dup
+  print
+  
+  // Overwrite i with j
+  pusht
+  left
+  pop
+  
+  // Write result of calculation to j, and duplicate it for further usage
+  dup
+  right
+  pop
+
+  // Move head for a clean loop
+  left
+
+  // Check if we should already stop
+  push 1337
+  lt
+  not
+  push MAINLOOP
+  jmpc
+// MAINLOOP END
+
+// Calculated all fibonacci numbers below 1337 :) yay!
+

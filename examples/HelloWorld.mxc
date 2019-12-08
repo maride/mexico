@@ -1,0 +1,26 @@
+// A simple Hello World program, only working with the stack
+
+// Push "Hello World\0" in reverse order
+push 0
+push 100
+push 108
+push 114
+push 111
+push 87
+push 32
+push 111
+push 108
+push 108
+push 101
+push 72
+
+PRINTLOOP:
+	// Print until encountering null byte
+	dup
+	print
+	push 0
+	eq
+	not
+	push PRINTLOOP
+	jmpc 
+// Done
