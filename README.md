@@ -88,7 +88,7 @@ There is a reference implementation for the compiler, `mexico`, and a reference 
 
 ### Compiler "mexico"
 
-Simply run `go get github.com/maride/mexico/mexico` to get the compiler.
+Simply run `go install github.com/maride/mexico/mexico@latest` to get the compiler.
 
 The mexico compiler takes three arguments:
 
